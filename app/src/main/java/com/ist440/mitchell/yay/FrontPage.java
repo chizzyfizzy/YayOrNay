@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.AdapterView.OnItemSelectedListener;
@@ -25,6 +26,7 @@ public class FrontPage extends AppCompatActivity {
         setContentView(R.layout.activity_front_page);
         initializeUI();
         listViewItemClick();
+        uploadButtonClick();
 
     }
 
@@ -80,6 +82,17 @@ public class FrontPage extends AppCompatActivity {
 
 
 
+            }
+        });
+    }
+
+    public void uploadButtonClick(){
+        Button uB = (Button) findViewById(R.id.uploadButton);
+        uB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FrontPage.this, ChosenCategory.class);
+                startActivity(intent);
             }
         });
     }
