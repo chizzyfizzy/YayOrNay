@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ist440.mitchell.yay">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".FrontPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChosenCategory"
+            android:label="@string/title_activity_chosen_category"
+            android:parentActivityName=".FrontPage"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ist440.mitchell.yay.FrontPage" />
+        </activity>
+        <activity
+            android:name=".ArtsCrafts"
+            android:label="@string/title_activity_arts_crafts"
+            android:parentActivityName=".FrontPage"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ist440.mitchell.yay.FrontPage" />
+        </activity>
+        <activity
+            android:name=".Technology"
+            android:label="@string/title_activity_technology"
+            android:parentActivityName=".FrontPage"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ist440.mitchell.yay.FrontPage" />
+        </activity>
+        <activity
+            android:name=".Cars"
+            android:label="@string/title_activity_cars"
+            android:parentActivityName=".FrontPage"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ist440.mitchell.yay.FrontPage" />
+        </activity>
+        <activity
+            android:name=".Books"
+            android:label="@string/title_activity_books"
+            android:parentActivityName=".FrontPage"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ist440.mitchell.yay.FrontPage" />
+        </activity>
+        <activity
+            android:name=".TestTab"
+            android:label="@string/title_activity_test_tab"
+            android:parentActivityName=".FrontPage"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ist440.mitchell.yay.FrontPage" />
+        </activity>
+        <activity
+            android:name=".Toys"
+            android:label="@string/title_activity_toys"
+            android:parentActivityName=".FrontPage"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ist440.mitchell.yay.FrontPage" />
+        </activity>
+    </application>
+
+</manifest>
